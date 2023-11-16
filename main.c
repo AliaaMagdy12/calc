@@ -9,7 +9,12 @@ float divide(float dividend, float divisor) {
     }
 }
 
+float subtract(float minuend, float subtrahend) {
+    return minuend - subtrahend;
+}
+
 int main() {
+/*----------------------division--------------------*/
     float num1, num2;
 
     printf("Enter the dividend: ");
@@ -20,6 +25,18 @@ int main() {
 
     float result = divide(num1, num2);
     printf("Result: %.2f\n", result);
+
+/*---------------------Subtraction-------------------*/
+
+    printf("Enter the first number: ");
+    scanf("%f", &num1);
+
+    printf("Enter the second number: ");
+    scanf("%f", &num2);
+
+    float subtractionResult = subtract(num1, num2);
+    printf("Subtraction Result: %.2f\n", subtractionResult);
+
 
     return 0;
 }
