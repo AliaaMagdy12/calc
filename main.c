@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to calculate the sum of two integers
-float addTwoIntegers(float num1, float num2) {
+float add(float num1, float num2) {
     // Calculate the sum
     float sumResult = num1 + num2;
 
@@ -18,9 +18,9 @@ int main() {
     printf("Enter the second num: ");
     scanf("%f", &num2);
 
-    int result_sum = addTwoIntegers(num1, num2);
+    float result_sum = add(num1, num2);
 
-    printf("Sum: %d\n", result_sum);
+    printf("Sum: %f\n", result_sum);
 
     return 0;
 }
