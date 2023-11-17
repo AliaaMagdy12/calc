@@ -10,7 +10,7 @@ float addTwoIntegers(float num1, float num2) {
 
 int main() {
     
-    int num1, num2;
+    float num1, num2;
 
     printf("Enter the first integer: ");
     scanf("%d", &num1);
