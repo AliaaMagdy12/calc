@@ -18,6 +18,15 @@ float divide(float dividend, float divisor) {
 
 float subtract(float minuend, float subtrahend) {
     return minuend - subtrahend;
+
+
+
+}
+
+
+float MUL(float num1, float num2)
+{
+	return num1*num2;
 }
 
 int main() {
@@ -53,5 +62,9 @@ int main() {
     float result_sum = add(num1, num2);
 
     printf("Sum: %f\n", result_sum);
+	
+/*---------------------MUL-------------------*/
+	printf("%d",MUL(num1,num2));
+
     return 0;
 }
