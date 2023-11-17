@@ -64,7 +64,14 @@ int main() {
     printf("Sum: %f\n", result_sum);
 	
 /*---------------------MUL-------------------*/
-	printf("%d",MUL(num1,num2));
+	printf("Enter the first num: ");
+    scanf("%f", &num1);
+
+    printf("Enter the second num: ");
+    scanf("%f", &num2);
+
+    float result_mul = MUL(num1, num2);
+	printf("%f",result_mul);
 
     return 0;
 }
