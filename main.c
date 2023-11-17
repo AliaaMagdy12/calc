@@ -9,14 +9,14 @@ float addTwoIntegers(float num1, float num2) {
 }
 
 int main() {
-    
+
     float num1, num2;
 
-    printf("Enter the first integer: ");
-    scanf("%d", &num1);
+    printf("Enter the first num: ");
+    scanf("%f", &num1);
 
-    printf("Enter the second integer: ");
-    scanf("%d", &num2);
+    printf("Enter the second num: ");
+    scanf("%f", &num2);
 
     int result_sum = addTwoIntegers(num1, num2);
 
