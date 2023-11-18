@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<math.h>
 
 float add(float num1, float num2) {
     // Calculate the sum
@@ -28,7 +29,10 @@ float MUL(float num1, float num2)
 {
 	return num1*num2;
 }
-
+float Mod(float x, float y)
+{
+	return fmod(x,y);
+}
 int main() {
 /*----------------------division--------------------*/
     float num1, num2;
