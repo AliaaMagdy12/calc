@@ -36,46 +36,33 @@ float Mod(float x, float y)
 int main() {
 /*----------------------division--------------------*/
     float num1, num2;
-
-    printf("Enter the dividend: ");
-    scanf("%f", &num1);
-
-    printf("Enter the divisor: ");
-    scanf("%f", &num2);
-
-    float result = divide(num1, num2);
-    printf("Result: %.2f\n", result);
-
-/*---------------------Subtraction-------------------*/
-
+    char ch;
     printf("Enter the first number: ");
     scanf("%f", &num1);
 
     printf("Enter the second number: ");
     scanf("%f", &num2);
-
-    float subtractionResult = subtract(num1, num2);
-    printf("Subtraction Result: %.2f\n", subtractionResult);
-/*---------------------ADD-------------------*/
-    printf("Enter the first num: ");
-    scanf("%f", &num1);
-
-    printf("Enter the second num: ");
-    scanf("%f", &num2);
-
-    float result_sum = add(num1, num2);
-
-    printf("Sum: %f\n", result_sum);
-	
-/*---------------------MUL-------------------*/
-	printf("Enter the first num: ");
-    scanf("%f", &num1);
-
-    printf("Enter the second num: ");
-    scanf("%f", &num2);
-
-    float result_mul = MUL(num1, num2);
-	printf("%f",result_mul);
-
+    
+    printf("enter the operation ");
+    scanf(" %c",&ch);
+    switch(ch)
+    {
+        case('+'):
+            printf("%f",add(num1,num2));
+            break;
+        case('-'):
+            printf("%f",subtract(num1,num2));
+            break;
+        case('/'):
+            printf("%f",divide(num1,num2));
+            break;
+        case('*'):
+            printf("%f",MUL(num1,num2));
+            break;
+        case('%'):
+            printf("%f",Mod(num1,num2));
+            break;
+    }
+    
     return 0;
 }
